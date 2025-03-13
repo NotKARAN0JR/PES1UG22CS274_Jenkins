@@ -11,8 +11,8 @@ pipeline {
         
         stage('Test') {
             steps {
-                echo 'Testing the application...'
-                sh 'cd main && ./hello_exec'
+                 echo 'Testing the application...'
+                 sh 'cd main && ./wrong_executable_name'  // Changed 'hello_exec' to 'wrong_executable_name'
             }
         }
         
